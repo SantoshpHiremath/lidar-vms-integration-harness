@@ -45,7 +45,7 @@ class MediaProfile:
 
 @dataclass
 class LidarDevice:
-    """A simulated Blickfeld-style LiDAR device exposing an
+    """A simulated LiDAR device exposing an
     ONVIF-shaped device/media interface for VMS integration testing."""
     device_id: str
     ip_address: str
@@ -76,8 +76,8 @@ class LidarDevice:
 def negotiate_common_capabilities(device: LidarDevice, vms_requirements: DeviceCapabilities) -> list[str]:
     """Compares a device's capabilities against what a VMS platform
     requires for integration, returning a list of unmet requirements --
-    exactly the interoperability-check step named in the posting
-    ("test the interoperability... to ensure seamless integration")."""
+    the interoperability-check step that ensures
+    seamless integration."""
     unmet = []
     if vms_requirements.supports_media and not device.capabilities.supports_media:
         unmet.append("media")

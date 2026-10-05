@@ -1,8 +1,8 @@
 """
 Basic 3D point-cloud utilities: parsing a simplified ASCII PCD-style
 format, counting points within a defined region of interest, and
-detecting clusters -- the shape of the "manually counting points within
-the 3D point cloud space" requirement named in the posting, done
+detecting clusters -- the shape of manually counting points within
+the 3D point cloud space, done
 programmatically and verifiably rather than by eye.
 
 Does not depend on open3d (not installed in this environment) --

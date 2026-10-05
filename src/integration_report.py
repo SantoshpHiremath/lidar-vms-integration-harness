@@ -1,8 +1,7 @@
 """
-Documents integration-test results -- the "Validation & Documentation"
-task named in the posting: "You document integration results,
+Documents integration-test results -- documenting integration results,
 compliance findings, and system behavior to support interoperability
-improvements and product development."
+improvements and product development.
 """
 
 from __future__ import annotations
@@ -35,7 +34,7 @@ def run_integration_test(
     point_count_check_passed: bool,
 ) -> IntegrationTestResult:
     """Runs a single interoperability test of a device against a named
-    VMS platform's requirements, mirroring the posting's own
+    VMS platform's requirements, following a typical
     integration-test workflow: capability negotiation, stream-URI
     resolution, and point-cloud validation."""
     unmet = negotiate_common_capabilities(device, vms_requirements)

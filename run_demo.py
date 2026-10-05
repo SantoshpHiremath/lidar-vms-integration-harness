@@ -19,7 +19,7 @@ SAMPLE_PCD = """
 
 
 def main():
-    device = LidarDevice(device_id="blickfeld-sim-01", ip_address="192.168.10.42",
+    device = LidarDevice(device_id="lidar-sim-01", ip_address="192.168.10.42",
                           capabilities=DeviceCapabilities(supports_ptz=False))
     device.add_profile(MediaProfile("main", "Main Stream", (1920, 1080), 20, "POINTCLOUD_PCD"))
     print(f"Device {device.device_id} configured with profile 'main'.")
